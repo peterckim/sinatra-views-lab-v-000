@@ -5,8 +5,9 @@
   </head>
   <body>
     <% time = Time.now %>
-    <% case time %>
-    <% when 
+    <% case time.wday %>
+    <% when 0 %>
+      <h1>Sunday</h1>
       <h1><%= time.wday %></h1>
   </body>
 </html>
